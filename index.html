@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070707" />
+  <meta name="description" content="Aryan Singh (Max) — COPA-certified computer professional, educator and technology creator, building things to learn." />
+  <title>Aryan Singh — Digital Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-kicker">INITIALIZING</span>
+      <div class="loader-number"><span id="loadNum">0</span>%</div>
+      <div class="loader-line"><span id="loadBar"></span></div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="brand magnetic" data-cursor="brand">
+      <span class="brand-mark">A</span>
+      <span>ARYAN<span class="muted">/</span>SINGH</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#journey" class="nav-link">Journey</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav-cta magnetic">Let's talk <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="hero-grid"></div>
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow reveal">COMPUTER • CODE • EDUCATION • CREATIVE TECH</p>
+
+        <h1 class="hero-title">
+          <span class="line-mask"><span class="line">I BUILD</span></span>
+          <span class="line-mask"><span class="line outline">DIGITAL</span></span>
+          <span class="line-mask"><span class="line">THINGS<span class="accent">.</span></span></span>
+        </h1>
+
+        <div class="hero-bottom">
+          <p class="hero-description reveal">
+            I'm Aryan — most people just call me Max. COPA-certified, endlessly
+            curious, and always turning ideas into things you can actually
+            click, use, and sometimes break.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="button button-solid magnetic" href="#work">Explore my work <span>↓</span></a>
+            <a class="button button-ghost magnetic" href="#contact">Start a conversation <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap reveal">
+        <div class="photo-frame">
+          <img src="assets/profile.jpg" alt="Aryan Singh, also known as Max" />
+          <div class="photo-scan"></div>
+        </div>
+        <div class="photo-badge">AKA MAX</div>
+        <div class="photo-orbit orbit-1"></div>
+        <div class="photo-orbit orbit-2"></div>
+      </div>
+
+      <div class="hero-ticker">
+        <div class="ticker-track">
+          <span>BUILD • LEARN • TEACH • CREATE •</span>
+          <span>BUILD • LEARN • TEACH • CREATE •</span>
+          <span>BUILD • LEARN • TEACH • CREATE •</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+        <i></i>
+      </div>
+    </section>
+
+    <!-- STAT STRIP -->
+    <section class="stats section">
+      <div class="stat reveal"><strong data-count="2026">0</strong><span>YEAR OF COPA<br>CERTIFICATION</span></div>
+      <div class="stat reveal"><strong data-count="6">0</strong><span>CORE<br>SKILLS</span></div>
+      <div class="stat reveal"><strong data-count="10000">0</strong><span>Q&A DATASET<br>EXPERIMENT</span></div>
+      <div class="stat reveal"><strong>01</strong><span>RULE: BUILD<br>USEFUL THINGS</span></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee-section">
+      <div class="marquee">
+        <span>NOT JUST A PORTFOLIO</span>
+        <span class="asterisk">✳</span>
+        <span>A DIGITAL IDENTITY</span>
+        <span class="asterisk">✳</span>
+        <span>NOT JUST A PORTFOLIO</span>
+        <span class="asterisk">✳</span>
+        <span>A DIGITAL IDENTITY</span>
+        <span class="asterisk">✳</span>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work section" id="work">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow reveal">SELECTED WORK</p>
+          <h2 class="section-title reveal">Things I’m<br><em>building.</em></h2>
+          <p class="section-lede reveal">Not a resume — more like a lab notebook. Some of this works well. Some of it's rough. All of it taught me something.</p>
+        </div>
+        <p class="section-note reveal">01 — 04<br>Personal experiments, not products</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card project-feature reveal">
+          <div class="project-index">01</div>
+          <div class="project-content">
+            <p class="project-type">AI / ANDROID / EDUCATION</p>
+            <h3>SmartBot<span>.</span></h3>
+            <p>
+              My attempt at an offline-first educational chatbot — a
+              rule-driven knowledge engine, local storage and fast indexed
+              question answering, built to see how far I could get without
+              needing the internet.
+            </p>
+            <div class="tags">
+              <span>Kotlin</span><span>Jetpack Compose</span><span>Room</span><span>AI</span>
+            </div>
+          </div>
+          <div class="project-visual smartbot-visual">
+            <div class="bot-orb"></div>
+            <div class="bot-ring ring-a"></div>
+            <div class="bot-ring ring-b"></div>
+            <div class="terminal">
+              <span>&gt; query("what is CPU?")</span>
+              <span>&gt; index.search()</span>
+              <span class="terminal-answer">CPU = Central Processing Unit</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-index">02</div>
+          <div class="project-content">
+            <p class="project-type">PERSONAL AI / VOICE</p>
+            <h3>Eve<span>.</span></h3>
+            <p>
+              A personal experiment in stitching together speech recognition,
+              LLM reasoning, command parsing, memory and text-to-speech into
+              something that talks back.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>Whisper</span><span>Groq</span><span>Edge-TTS</span>
+            </div>
+          </div>
+          <div class="project-visual waveform-visual">
+            <div class="waveform">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <span class="visual-caption">LISTENING...</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-index">03</div>
+          <div class="project-content">
+            <p class="project-type">WEB / CIVIC TECH</p>
+            <h3>Sewa Mate<span>.</span></h3>
+            <p>
+              A concept I sketched while learning civic tech and UX — making
+              local issue reporting simpler, clearer and easier to track.
+              Still just an idea explored in code.
+            </p>
+            <div class="tags">
+              <span>React</span><span>Web</span><span>UX</span><span>Supabase</span>
+            </div>
+          </div>
+          <div class="project-visual map-visual">
+            <div class="map-grid"></div>
+            <div class="map-route"></div>
+            <div class="map-pin">+</div>
+            <div class="map-card">ISSUE REPORTED<br><small>STATUS: TRACKING</small></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-index">04</div>
+          <div class="project-content">
+            <p class="project-type">DATA / EDUCATION / EXPERIMENT</p>
+            <h3>Knowledge Engine<span>.</span></h3>
+            <p>
+              Where I actually learned how search works — structured Q&A,
+              inverted indexing, typo tolerance and benchmarking, built to
+              understand the machinery, not to ship a product.
+            </p>
+            <div class="tags">
+              <span>JSON</span><span>Search</span><span>Algorithms</span><span>Benchmarks</span>
+            </div>
+          </div>
+          <div class="project-visual data-visual">
+            <div class="data-bars">
+              <span style="--h:32%"></span><span style="--h:56%"></span><span style="--h:42%"></span>
+              <span style="--h:78%"></span><span style="--h:61%"></span><span style="--h:92%"></span>
+              <span style="--h:70%"></span><span style="--h:100%"></span><span style="--h:83%"></span>
+            </div>
+            <div class="data-line"></div>
+            <small>INDEX PERFORMANCE / BENCHMARK</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="about-visual reveal">
+        <div class="big-letter">A</div>
+        <div class="rotating-label">COMPUTER • CODE • EDUCATION • 2026 •</div>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow reveal">ABOUT ME</p>
+        <h2 class="section-title reveal">Curious enough<br>to <em>question.</em><br>Technical enough<br>to <em>build.</em></h2>
+
+        <div class="about-text reveal">
+          <p>
+            Online I mostly go by <strong>Max</strong>. Aryan Singh is the name
+            on my paperwork — my COPA certificate, my trade test, the formal
+            stuff. Both are me.
+          </p>
+          <p>
+            I'm interested in what happens underneath the surface — how
+            computers work, how software is designed, how AI can be made useful,
+            and how technology can improve the way people learn.
+          </p>
+          <p>
+            I completed my <strong>COPA (Computer Operator and Programming Assistant)</strong>
+            training in 2026 and earned the National Trade Certificate. I also
+            spend time around computer education, which keeps me close to both
+            technology and the people learning it.
+          </p>
+          <p>
+            Most of what's on this page isn't a finished product — it's me
+            teaching myself by building. Some of it works well. Some of it's
+            rough at the edges. All of it taught me something.
+          </p>
+        </div>
+
+        <a class="text-link magnetic reveal" href="#contact">Know more about me <span>↗</span></a>
+      </div>
+    </section>
+
+    <!-- CERTIFICATE -->
+    <section class="certificate section" id="certificate">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow reveal">CREDENTIAL</p>
+          <h2 class="section-title reveal">Proof of<br><em>the work.</em></h2>
+        </div>
+        <p class="section-note reveal">NATIONAL TRADE CERTIFICATE<br>COPA — 2026</p>
+      </div>
+
+      <div class="certificate-stage reveal">
+        <div class="certificate-glow"></div>
+        <div class="certificate-card">
+          <img src="assets/copa-certificate-redacted.png" alt="National Trade Certificate — Computer Operator and Programming Assistant, personal identifiers redacted" />
+        </div>
+        <div class="certificate-caption">
+          <span>GOVERNMENT OF INDIA · MINISTRY OF SKILL DEVELOPMENT & ENTREPRENEURSHIP</span>
+          <span class="cert-redacted">PERSONAL DETAILS REDACTED FOR PRIVACY</span>
+          <span class="cert-arrow">↘</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <div class="skills-intro">
+        <p class="eyebrow reveal">TOOLBOX</p>
+        <h2 class="section-title reveal">I learn by<br><em>making.</em></h2>
+        <p class="section-note reveal">Hover the skills.<br>They react.</p>
+      </div>
+
+      <div class="skill-cloud reveal">
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill large magnetic">Python</span>
+        <span class="skill-pill">UI / Web Designing</span>
+        <span class="skill-pill large magnetic">Teaching</span>
+        <span class="skill-pill">Problem Solving</span>
+        <span class="skill-pill accent-pill large magnetic">Leadership</span>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="journey section" id="journey">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow reveal">HOW I GOT HERE</p>
+          <h2 class="section-title reveal">Still<br><em>becoming.</em></h2>
+          <p class="section-lede reveal">The short version of a year that turned into a habit.</p>
+        </div>
+        <p class="section-note reveal">2022 — NOW<br>Scroll to follow along</p>
+      </div>
+
+      <div class="journey-track reveal" id="journeyTrack">
+        <div class="journey-line">
+          <span class="journey-line-fill" id="journeyFill"></span>
+          <span class="journey-pulse" id="journeyPulse"></span>
+        </div>
+
+        <div class="journey-item">
+          <span class="journey-date">2022</span>
+          <h3>Finished Class X</h3>
+          <p>Completed secondary school — the first checkpoint before computers became the plan.</p>
+        </div>
+
+        <div class="journey-item">
+          <span class="journey-date">2022</span>
+          <h3>Completed ADCA</h3>
+          <p>Finished the Advanced Diploma in Computer Applications — my first real step into computers, well before COPA.</p>
+        </div>
+
+        <div class="journey-item">
+          <span class="journey-date">Aug 2025</span>
+          <h3>Started from zero</h3>
+          <p>Enrolled in COPA training at M.G. Private ITC, Mirzapur — no real programming background, just curiosity.</p>
+        </div>
+
+        <div class="journey-item">
+          <span class="journey-date">Through the year</span>
+          <h3>Learned by teaching</h3>
+          <p>Picked up computer operations and programming fundamentals — and started explaining them to others, which taught me more than the classes did.</p>
+        </div>
+
+        <div class="journey-item">
+          <span class="journey-date">Jul 2026</span>
+          <h3>Cleared the trade test</h3>
+          <p>Sat the All India Trade Test for Computer Operator and Programming Assistant, and passed.</p>
+        </div>
+
+        <div class="journey-item">
+          <span class="journey-date">Aug 2026</span>
+          <h3>Certified</h3>
+          <p>Awarded the National Trade Certificate by the Directorate General of Training, Government of India.</p>
+        </div>
+
+        <div class="journey-item">
+          <span class="journey-date">Alongside all this</span>
+          <h3>Kept building</h3>
+          <p>SmartBot, Eve, Sewa Mate, the Knowledge Engine — small, unfinished, honest experiments, not products.</p>
+        </div>
+
+        <div class="journey-item">
+          <span class="journey-date">Now</span>
+          <h3>Still going</h3>
+          <p>Exploring AI, teaching when I can, and building this very page to see who's out there.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="manifesto section">
+      <div class="manifesto-word reveal">WHY<span>?</span></div>
+      <p class="manifesto-text reveal">
+        “I don't want to just use technology.<br>
+        I want to understand <em>why it works</em> —<br>
+        and then build something better.”
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="contact-top">
+        <p class="eyebrow reveal">HAVE AN IDEA?</p>
+        <h2 class="contact-title reveal">LET’S MAKE<br><em>SOMETHING.</em></h2>
+        <p class="contact-lede reveal">Tell me what you're building, or just say hi — I read every message myself and I'll get back to you within a day or two.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-primary">
+          <a href="mailto:ind23234589@gmail.com" class="email-link magnetic reveal">ind23234589@gmail.com</a>
+
+          <div class="social-row reveal">
+            <a href="https://github.com/Aryancode23" target="_blank" rel="noopener" class="social-link magnetic">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.64 0-1.25.44-2.27 1.17-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 2.86-.39c.97 0 1.95.13 2.86.39 2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.07 0 4.38-2.66 5.34-5.2 5.63.41.36.77 1.07.77 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55 4.51-1.51 7.77-5.76 7.77-10.78C23.02 5.24 18.27.5 12 .5Z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://instagram.com/max_aryan_1" target="_blank" rel="noopener" class="social-link magnetic">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.4 4.4 0 0 1 1.66 1.08 4.4 4.4 0 0 1 1.08 1.66c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.4 4.4 0 0 1-1.08 1.66 4.4 4.4 0 0 1-1.66 1.08c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.4 4.4 0 0 1-1.66-1.08 4.4 4.4 0 0 1-1.08-1.66c-.16-.46-.35-1.26-.4-2.43-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43A4.4 4.4 0 0 1 4.77 3.75 4.4 4.4 0 0 1 6.43 2.67c.46-.16 1.26-.35 2.43-.4C10.13 2.21 10.51 2.2 12 2.2Zm0 1.8c-3.14 0-3.5.01-4.74.07-.96.04-1.48.2-1.82.34-.46.18-.79.39-1.13.73-.34.34-.55.67-.73 1.13-.14.34-.3.86-.34 1.82-.06 1.24-.07 1.6-.07 4.74s.01 3.5.07 4.74c.04.96.2 1.48.34 1.82.18.46.39.79.73 1.13.34.34.67.55 1.13.73.34.14.86.3 1.82.34 1.24.06 1.6.07 4.74.07s3.5-.01 4.74-.07c.96-.04 1.48-.2 1.82-.34.46-.18.79-.39 1.13-.73.34-.34.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-1.24.07-1.6.07-4.74s-.01-3.5-.07-4.74c-.04-.96-.2-1.48-.34-1.82a3 3 0 0 0-.73-1.13 3 3 0 0 0-1.13-.73c-.34-.14-.86-.3-1.82-.34-1.24-.06-1.6-.07-4.74-.07Zm0 3.06a4.94 4.94 0 1 1 0 9.88 4.94 4.94 0 0 1 0-9.88Zm0 1.8a3.14 3.14 0 1 0 0 6.28 3.14 3.14 0 0 0 0-6.28Zm5.14-1.99a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"/></svg>
+              <span>Instagram</span>
+            </a>
+            <a href="mailto:ind23234589@gmail.com" class="social-link magnetic">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.24L19.8 6H4.2Zm15.8 1.6-7.4 5.92a1 1 0 0 1-1.2 0L4 7.6V18h16V7.6Z"/></svg>
+              <span>Gmail</span>
+            </a>
+          </div>
+
+          <div class="contact-meta">
+            <span>BASED IN UTTAR PRADESH, INDIA</span>
+            <span>AVAILABLE FOR COLLABORATION</span>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/ind23234589@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New message from your portfolio" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <label class="form-field">
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label class="form-field">
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label class="form-field">
+            <span>Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+
+          <button type="submit" class="button button-solid form-submit magnetic">
+            <span class="form-submit-label">Send it</span> <span>↗</span>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="footer-row">
+        <span>© 2026 ARYAN SINGH — AKA MAX</span>
+        <span>BUILT WITH HTML / CSS / JS</span>
+        <a href="#top" class="back-top magnetic">BACK TO TOP ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.8/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
