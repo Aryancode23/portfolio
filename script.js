@@ -236,6 +236,35 @@ const observer = new IntersectionObserver(entries => {
 }, { rootMargin: "-45% 0px -45% 0px" });
 sections.forEach(s => observer.observe(s));
 
+/* Mobile menu */
+const navToggle = $("#navToggle");
+const mobileMenu = $("#mobileMenu");
+if (navToggle && mobileMenu) {
+  const closeMenu = () => {
+    mobileMenu.classList.remove("open");
+    navToggle.classList.remove("active");
+    navToggle.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+    lenis?.start();
+  };
+  const openMenu = () => {
+    mobileMenu.classList.add("open");
+    navToggle.classList.add("active");
+    navToggle.setAttribute("aria-expanded", "true");
+    document.body.style.overflow = "hidden";
+    lenis?.stop();
+  };
+  navToggle.addEventListener("click", () => {
+    mobileMenu.classList.contains("open") ? closeMenu() : openMenu();
+  });
+  $$(".mobile-menu-links .nav-link, .mobile-menu-cta").forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) closeMenu();
+  });
+}
+
 /* Contact form — submits to FormSubmit without leaving the page */
 const contactForm = $("#contactForm");
 if (contactForm) {
