@@ -77,6 +77,23 @@ img { max-width: 100%; display: block; }
 .nav-cta { font: 11px var(--mono); text-transform: uppercase; border-bottom: 1px solid currentColor; padding-bottom: 5px; }
 .nav-cta span { margin-left: 7px; }
 
+.nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 6px; width: 34px; height: 34px; background: none; border: none; cursor: pointer; color: inherit; }
+.nav-toggle span { display: block; width: 100%; height: 1px; background: currentColor; transition: transform .35s cubic-bezier(.2,.8,.2,1), opacity .25s ease; }
+.nav-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.active span:nth-child(2) { opacity: 0; }
+.nav-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-menu {
+  position: fixed; inset: 0; z-index: 999; background: var(--bg);
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 40px;
+  padding: 10vw 8vw; transform: translateY(-100%); transition: transform .55s cubic-bezier(.2,.8,.2,1);
+  overflow-y: auto;
+}
+.mobile-menu.open { transform: translateY(0); }
+.mobile-menu-links { display: flex; flex-direction: column; gap: 20px; }
+.mobile-menu-links .nav-link { font: 600 clamp(32px, 11vw, 64px)/1 var(--display); letter-spacing: -.03em; text-transform: none; color: var(--text); }
+.mobile-menu-cta { margin-top: 10px; width: auto; }
+
 .section { position: relative; padding: 12vw 5vw; }
 .hero { min-height: 100svh; padding-top: 150px; display: flex; align-items: center; }
 .hero-grid {
@@ -143,6 +160,7 @@ img { max-width: 100%; display: block; }
 .section-title em, .contact-title em { font-family: var(--serif); font-weight: 400; letter-spacing: -.06em; }
 .section-note { font: 9px/1.8 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .12em; text-align: right; }
 .section-lede { max-width: 440px; margin-top: 22px; color: #92928d; font-size: 14px; line-height: 1.75; }
+.section-lede strong { color: var(--text); font-weight: 600; }
 
 .project-list { border-top: 1px solid var(--line); }
 .project-card {
@@ -265,6 +283,7 @@ img { max-width: 100%; display: block; }
   body { cursor: auto; }
   .cursor-dot, .cursor-ring { display: none; }
   .nav-links { display: none; }
+  .nav-toggle { display: flex; }
   .hero { padding-top: 120px; display: block; }
   .hero-copy { width: 100%; }
   .hero-title { font-size: clamp(64px, 18vw, 130px); margin-bottom: 35px; }
